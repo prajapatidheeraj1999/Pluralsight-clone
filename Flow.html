@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            display: flex;
+            border: 0px solid red;
+            justify-content: end;
+            /* align-items: center; */
+            /* background-color: #202020; */
+            /* color: white; */
+            background-color: #202020;
+            /* position: fixed; */
+
+        }
+        nav>div{
+            border: 0px solid red;margin: 10px;
+            padding: 2px;
+            text-align: center;
+            /* margin-bottom: -10px; */
+            display: flex;
+            background-color: #202020;
+            align-items: center;
+
+        }
+         nav>div>a{
+            
+            text-decoration: none;
+            
+            color: white;
+            /* border: 1px solid black; */
+            text-align: center;
+            margin-left: 20px;
+           
+            
+        }
+        nav>div:nth-child(2)
+        {
+            margin-right: 50px;
+            margin-left: 20px;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            background-color: #2b2b2b;
+            padding: 30px;
+            align-items: center;
+            /* position: fixed; */
+
+        }
+        #navbar img{
+            width: 150px;
+            color: white;
+
+            /* border: 1px solid white; */
+            background-color: white;
+            background-color:#2b2b2b ;
+
+
+        }
+        #navbar>div:nth-child(6)
+        {
+            border: 0px solid white;
+            padding: 5px 10px;
+            background-color: #ee2365;
+            color: white;
+
+           
+        }
+        #Optimize{
+            background-color: #0f618f;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+        #Optimize>div{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,400px);
+            justify-content: space-between;
+            width: 90%;
+            background-color:#123c5e;
+            margin: auto;
+            /* margin-top: 100px;
+            margin-bottom: 100px; */
+            border-radius: 20px;
+            gap: 20px;
+            color: white;
+            
+
+        }
+        #Optimize>div>div:nth-child(2)>img{
+            width: 600px;
+        }
+        #Optimize>div>div
+        {
+            border: 0px solid white;
+        }
+        #Optimize>div>div:nth-child(1)
+        {
+            margin-left: 50px;
+            padding-right: 50px;
+        }
+        #Optimize>div>div:nth-child(1)>h1
+        {
+            font-size: 40px;
+        }
+        #Optimize>div>div:nth-child(1)>button{
+            font-size: 15px;
+            padding: 15px 30px;
+            background-color:#2479bf;
+            color: white;
+            border: none;
+            /* margin-left: 30px; */
+            margin-top: 30px;
+        }
+        #Optimize>div>div:nth-child(1)>button:nth-child(4)
+        {
+            margin-left: 20px;
+            background-color: #162f44;
+        }
+        #Upgrade{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,400px);
+            width: 80%;
+            margin: auto;
+            border: 0px solid black;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 30px;
+            background-color: #ffffff;
+        }
+        #Upgrade>div{
+            border: 0px solid red;
+
+        }
+        #Upgrade img{
+            width: 500px;
+        }
+        #Upgrade>div:nth-child(2)
+        {
+            padding: 50px;
+        }
+        #Upgradeflow{
+            display: flex;
+            justify-content: space-around;
+            color: #ee2365;
+        }
+        #Increase{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,400px);
+            width: 80%;
+            margin: auto;
+            border: 0px solid black;
+            border-radius: 20px;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            margin-top: 30px;
+            background-color: #ffffff;
+
+        }
+        #Increase img{
+            width: 500px;
+        }
+        #Increase h1{
+            font-size: 40px;
+            margin-top: 40px;
+        }
+        #Increase>div{
+            border: 0px solid black;
+            padding: 40px;
+        }
+        #Increase>div p:nth-child(3){
+            color: #ee2365;
+            font-size: 20px;
+
+        }
+        #Returns{
+            background-color: #222222;
+            border: 1px solid white;
+        }
+        #Returns>div:nth-child(1)
+        {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            margin-top: 70px;
+            color: white;
+
+        }
+        #Returns>div:nth-child(1)>h1{
+            font-size: 50px;
+        }
+        #Returns>div:nth-child(2)
+        {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,300px);
+            width: 80%;
+            margin: auto;
+            border: 0px solid black;
+        }
+        #Returns>div:nth-child(2)>div
+        {
+            margin: auto;
+            color: white;
+
+        }
+        #Returns>div:nth-child(2)>div>h1{
+            border: 1px solid white;
+            padding: 60px;
+            width: 100px;
+            text-align: center;
+            border-radius: 50%;
+            color: white;
+        }
+        #Returns>div:nth-child(2)>div:nth-child(2)>h1
+        {
+            background-color:#b4d67c;
+        }
+        #Returns>div:nth-child(2)>div:nth-child(3)>h1
+        {
+            background-color:#00a1fc;
+        }
+        #Returns>div:nth-child(3){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,auto);
+            width: 80%;
+            margin: auto;
+            border: 0px solid white;
+            /* color: white; */
+            border-radius: 30px;
+            background-color: #ffffff;
+            margin-top: 50px;
+
+        }
+        #Returns>div:nth-child(3)>div{
+            border: 0px solid white;
+            padding: 30px;
+        }
+        #Returns>div:nth-child(3)>div:nth-child(2)
+        {
+            margin-top: 100px;
+        }
+        #Returns>div:nth-child(3)>div:nth-child(1)>h3{
+            color: #ee2365;
+        }
+        #Returns>div:nth-child(3)>div>img{
+            width: 150px;
+            margin-left: 50px;
+        }
+        #persent1
+        {
+            display: flex;
+            margin-top: 30px;
+            justify-content: space-evenly;
+            
+
+        }
+        #persent1>img{
+            width: 100px;
+
+        }
+        #persent2>img{
+            width: 100px;
+
+        }
+        #persent2
+        {
+            display: flex;
+            margin-top: 30px;
+            justify-content: space-evenly;
+        }
+        #Returns>div:nth-child(4)
+        {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+        #Returns>div:nth-child(4) img{
+            width: 150px;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        #Returns>div:nth-child(4) button{
+            font-size: 15px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #00a1fc;
+            margin-top: 50px;
+            border: none;
+            margin-left: 20px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html">Pluralsight</a>
+            <a href="Skills.html">Skills</a>
+            <a href="">Flow</a>
+            <a href="">Blog</a>
+        </div>
+        <div>
+            <a href=""> <img src="https://www.pluralsight.com/content/dam/ps-nav-assets/nav-profile-image.svg" alt=""></a>
+            <a href="">Sign in</a>
+
+        </div>
+        
+        
+    </nav>
+    <div id="navbar">
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/ps-nav-assets/product-logo/pluralsight-flow-color-logo.svg" alt="">
+        </div>
+        <div>Solition</div>
+        <div>Products</div>
+        <div>Resources</div>
+        <div>For Individual</div>
+        <!-- //<div><i class="fa-regular fa-magnifying-glass"></i></div> -->
+        <div>Contact Seles</div>
+    </div>
+    <div id="Optimize">
+        <div>
+            <div>
+                <h1>Optimize software delivery.
+                    Build happier, healthier teams.</h1>
+                    <p>Leverage workflow data to optimize software delivery and build more meaningful connections with your team members.</p>
+                    <button>View plane</button>
+                    <button>Contact sales</button>
+            </div>
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/flow-hero.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="Upgrade">
+        
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/flow-upgrade-process.png" alt="">
+            </div>
+            <div>
+                <h1>Upgrade your process. Unlock your people.</h1>
+                    <p>Pluralsight Flow gives you unmatched visibility into your team’s workflow patterns so you can identify bottlenecks, compare trends, and help your team be as effective as possible</p>
+                    <div id="Upgradeflow" >
+                        <h4>What is Flow? </h4>
+                   <h4>Take a self guided tour </h4>
+                    </div>
+                   
+            </div>
+            
+        
+    </div>
+    <div id="Increase">
+        <div>
+            <h1>Increase product delivery speed</h1>
+            <p>Identify bottlenecks and developer friction, improve flow efficiency and deployment, and build healthy development patterns.</p>
+            <p>Learn more  </p>
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/flow-delivery-speed.png" alt="">
+
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/flow-thriving-team.png" alt="">
+        </div>
+        <div>
+            <h1>Build a thriving team</h1>
+            <p>Improve knowledge sharing and collaboration, coach and develop engineers, reduce onboarding ramp time, and lead inclusively and objectively.</p>
+            <p>Learn more</p>
+        </div>
+        <div>
+            <h1>Drive strategic alignment</h1>
+            <p>Standardize healthy practices, verify third-party contract work, and evaluate investment decisions.</p>
+         
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/flow-strategic-alignment.png" alt="">
+        </div>
+
+    </div>
+    <div id="Returns">
+        <div>
+            <h1>Returns worth your investment</h1>
+            <h3>By prioritizing workforce development, your technologists will grow in their careers and your business will achieve better outcomes.</h3>
+        </div>
+        <div>
+            
+                <div>
+                    <h1>35 Persent</h1>
+                    <p>
+                        35% reduction in cycle time
+                    </p>
+                </div>
+                <div>
+                    <h1> 14 hour</h1>
+                    <p>
+                        14 hour reduction in PR time to merge
+                    </p>
+                </div>
+                <div>
+                    <h1>4 Month</h1>
+                    <p>
+                        Ramp time accelerated by 4 months
+                    </p>
+                </div>
+            
+            
+        </div>
+        <div>
+            <div>
+               <h3>Case study</h3>
+               <h1>How CloudHealth uses Pluralsight Flow to debug the development process</h1>
+               <p>"A world without Pluralsight Flow is one without hard data and no real evidence of how things are going. As engineering teams get larger, it’s more complicated; more repos, more code, more people. Without a tool like Flow that pulls it all together, it’s almost impossible to get a handle on what’s going on."</p>
+               <h2>Adam Abrevaya</h2>
+               <p>VP of Engineering, CloudHealth</p>
+               <h3>Read the full story     See more customer stories </h3>
+            </div>
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/cloudhealth-vmware.png" alt=""><br>
+                <div id="persent1">
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/flow-number-92.png" alt="">
+                    <p>increase in impact to codebase</p>
+                </div>
+                <div id="persent2">
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/flow-number-34.png" alt="">
+                <p>increase in features delivered</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div><h3>Helping organizations around the globe maximize their developers’ time and magnify their impact</h3></div>
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/customer-logo/adobe_white.png" alt="">
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/customer-logo/thomson_reuters_white.png" alt="">
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/customer-logo/KAR_white.png" alt="">
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/customer-logo/cox_automotive_white.png" alt="">
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/customer-logo/cigna_white.png" alt="">
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/flow/summer/customer-logo/manulife_white.png" alt="">
+            </div>
+            <div>
+                <button>View plan</button>
+                <button>Contact sales</button>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
