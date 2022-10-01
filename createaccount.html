@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #signin-page{
+            display: flex;
+
+            
+
+
+        }
+        #signin-page>div:nth-child(1)
+        {
+            border: 0px solid red;
+            width: 45%;
+            background-color: #0d0f12;
+        }
+        #signin-page>div:nth-child(1)>img{
+            width: 250px;
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #signin-page>div:nth-child(2)
+        {
+            border: 0px solid red;
+        }
+        #signin-page>div:nth-child(2)>img
+        {
+            width: 100%;
+            height: 100%;
+            border: 0px solid red;
+            
+        }
+        form{
+            color: white;
+            border: 0px solid white;
+            /* text-align: center; */
+            width: 70%;
+          
+            margin: auto;
+            margin-top: 50px;
+        }
+        form input,label,button
+        {
+            width: 100%;
+            padding: 10px;
+            
+        }
+        form p{
+            margin-top: 30px;
+            border: 0px solid red;
+
+        }
+        form input
+        {
+            background-color: #0d0f12;
+            color: white;
+            width: 94%;
+            margin-top: -10px;
+        }
+        form button{
+            margin-top: 30px;
+        }
+        form a{
+            text-align: center;
+            margin-top: 30px;
+            display: block;
+            font-size: 20px;
+            color: #0074ab;
+        }
+        #color
+        {
+            background-color: #0074ab;
+            color: white;
+            border: none;
+
+        }form hr{
+            color: #2d3137;
+        }
+        #create{
+            background-color:#2d3137 ;
+            color: white;
+            border: none;
+        }
+        #copy{
+            text-align: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div id="signin-page">
+        <div>
+            <img src="https://app.pluralsight.com/id/img/login-logo.png" alt=""> 
+            <form action="">
+                <p>Enter Your Name</p>
+                <input type="text" id="name" ><br>
+                <p>Enter Your Age</p>
+                <input type="text" id="age"><br>
+                <p>Enter Your Email</p>
+                <input type="text" id="email"><br>
+                <p> Enter Your Password</p>
+                <input type="password" id="emailpassword"><br>
+                <p> Set Your Password</p>
+                <input type="password" id="newpassword"><br>
+                <button id="color">Submit</button><br>
+                <hr>
+                <p id="copy">Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved.
+                    Terms of Use | Privacy Policy</p>
+
+            </form>
+            
+        </div>
+        <div>
+            <img src="image/Screenshot 2022-10-01 103547.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    let form=document.querySelector("form")
+    console.log(form)
+    let userdata=JSON.parse(localStorage.getItem("accountdata"))||[]
+    form.addEventListener("submit",createacc)
+    function createacc(el)
+    {
+        el.preventDefault()
+        obj={
+            name:form.name.valve,
+            age:form.age.value,
+            email:form.email.value,
+            emailpass:form.emailpassword.value,
+            newpass:form.newpassword.value,
+        }
+        userdata.push(obj)
+        console.log(userdata)
+        localStorage.setItem("accountdata",JSON.stringify(userdata))
+        alert("your account created ")
+
+    }
+</script>
