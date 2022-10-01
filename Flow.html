@@ -20,6 +20,14 @@
             background-color: #202020;
             /* position: fixed; */
 
+
+        }
+        nav{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            width: 100%;
         }
         nav>div{
             border: 0px solid red;margin: 10px;
@@ -55,7 +63,14 @@
             padding: 30px;
             align-items: center;
             /* position: fixed; */
+            margin-top: 50px;
 
+        }
+        #navbar{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
         }
         #navbar img{
             width: 150px;
@@ -80,6 +95,7 @@
             background-color: #0f618f;
             padding-top: 50px;
             padding-bottom: 100px;
+            margin-top: 140px;
         }
         #Optimize>div{
             display: grid;
@@ -216,7 +232,7 @@
 
         }
         #Returns>div:nth-child(2)>div>h1{
-            border: 1px solid white;
+            border: 0px solid white;
             padding: 60px;
             width: 100px;
             text-align: center;
@@ -301,6 +317,86 @@
             border: none;
             margin-left: 20px;
         }
+        #last{
+            background-color: #202020;
+        }
+        #last>div:nth-child(1)
+        {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-around;
+            
+
+
+        }
+        #last>div:nth-child(1) p{
+            color:#7f8f9b ;
+            text-align: left;
+        }
+        #last>div:nth-child(1) h2{
+            color:white;
+        }
+        #last>div:nth-child(1) button{
+            padding: 10px 25px 10px 25px;
+            font-size: 15px;
+            background-color: #ee2465;
+            color: white;
+            border: none;
+        }
+        #last>div:nth-child(1) input
+        {
+            padding: 10px;
+            width: 100%;
+            background-color:#313131;
+            border: none;
+
+        }
+        #second >div{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            justify-content: space-around;
+            color: white;
+            
+
+        }
+        #second >div:nth-child(1)
+        {
+            display: flex;
+            
+            margin: auto;
+            justify-content: space-around;
+        }
+        #second >div>div:nth-child(1){
+            border: 0px solid white;
+            display: flex;
+
+            width: 35%;
+        }
+        #second >div>div:nth-child(1)>img{
+            border: 0px solid white;
+            width: 50px;
+            height: 50px;
+        }
+        #second >div>div:nth-child(2)>img
+        {
+            border: 0px solid white;
+            width: 30px;
+            height: 30px;
+            margin-top: 10px;
+
+        }
+        #second >div>div:nth-child(2){
+            border: 0px solid white;
+            display: flex;
+            width: 20%;
+        }
+        #second >div>div:nth-child(3){
+            border: 0px solid white;
+            display: flex;
+            width: 40%;
+        }
         
 
 
@@ -315,8 +411,8 @@
             <a href="">Blog</a>
         </div>
         <div>
-            <a href=""> <img src="https://www.pluralsight.com/content/dam/ps-nav-assets/nav-profile-image.svg" alt=""></a>
-            <a href="">Sign in</a>
+            <a href="login_sign_page.html"> <img src="https://www.pluralsight.com/content/dam/ps-nav-assets/nav-profile-image.svg" alt=""></a>
+            <a href="login_sign_page.html">Sign in</a>
 
         </div>
         
@@ -458,6 +554,78 @@
         </div>
 
     </div>
+    <div id="last">
+        <div>
+                <div>
+                    <h2>Support</h2>
+                    <p>Contact</p>
+                    <p>Help Center</p>
+                    <p>IP Allowlist</p>
+                    <p>Site Map</p>
+                    <p>Download Pluralsight</p>
+                    <p>Skills Plans</p>
+                    <p>Flow Plans</p>
+                </div>
+                <div>
+                    <h2>Community</h2>
+                    <p>Guides</p>
+                    <p>Teach</p>
+                    <p>Partner with Pluralsight</p>
+                    <p>Affiliate Partners</p>
+                    <p>PluralsightOne.org</p>
+                    <p>Authors</p>
+                    
+                </div>
+                <div>
+                    <h2>Company</h2>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                    <p>Newsroom</p>
+                    <p>Resources</p>
+                    
+                </div>
+                <div>
+                    <h2>Industries</h2>
+                    <p>Public Sector</p>
+                    <p>Non-Profit</p>
+                    
+                </div>
+                <div>
+                    <h2>Newsletter</h2>
+                    <p>Sign up with your email to join our mailing list.</p>
+                    <p>Email Address</p>
+                    <input type="text" placeholder="Enter your mail">
+                    <p>I would like to receive emails from Pluralsight:</p>
+                    <button>Subcribe</button>
+    
+                </div>
+                
+             </div>
+             <div id="second">
+                <hr>
+                <div >
+                    <div>
+                        <img src="https://www.pluralsight.com/content/dam/logo/pluralsight-footer-logo-icon.png" alt="">
+                        <p>Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved</p>
+                    </div>
+                    <div>
+                        <img src="https://www.pluralsight.com/content/dam/social-icons/pluralsight-footer-globe-wireframe.png" alt="">
+                        
+                        <p>Deutsch</p>
+                        <p>Deutsch</p>
+                        <p>Deutsch</p>
+                    </div>
+                    <div>
+                        <p>Terms  of  Use</p>
+                        <p>Privacy  Notice</p>
+                        <p>Modern  Slavery  Act Transparency  Statement</p>
+                    </div>
+                </div>
+            
+        </div>
+        </div>
+       
+
 
     
 </body>
